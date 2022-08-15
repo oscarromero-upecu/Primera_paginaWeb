@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+   <h3>Datos</h3>
+     <ul>
+        <li>O988373887</li>
+        <li>Quito - Ecuador</li>
+        <li>rodromero10@hotmail.com</li>
+     </ul>
+     <hr>
+     <h3>Contactame</h3>
+     <p>Tu cometario:</p>
+     <!--formulario donde la accion es donde se mostrara y el metodo que seria post-->
+<form action="mailto: ejemplo@homail.com" method="post" enctype="text/plain">
+    <!--Un label o etiqueta es un texto que va asociado a un control con el que puede interactuar un usuario.
+     Un label contiene habitualmente dos informaciones importantes: el nombre del control con el que va asociado, y el texto a mostrar. 
+     Nos indica que el label tiene el atributo for establecido como igual a nombre.-->
+     <table>
+        <tr>
+            <td>
+                <label for="">Nombre:</label>
+                <!--Input se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario-->
+                <!--Existe una amplia variedad de tipos de datos de entrada y widgets de control-->
+                <!--TYPE determina el tipo de entrada que se va a utilizar:-->
+                <input name="Nombre" type="text"><!--text, muestra una caja donde introducir texto. Es el tipo por defecto de INPUT.-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Email:</label> 
+                <!--email se utilizan para permitir que el usuario ingrese y edite una dirección de correo electrónico -->
+                <input name="Email" type="email"> 
+            </td>
+        </tr>
+     </table>
+     <br>
+     <label for="">Mensaje:</label><br>
+      <!--textarea nos permite el ingreso de varias líneas a diferencia del cuadro de texto (input/text) Es muy utilizado cuando queremos ingresar un comentario de una longitud de caracteres grande.-->
+        <textarea name="Mensaje" id="" cols="20" rows="5"></textarea>
+        <br>
+         <!--submit, un botón que produce que el formulario actual sea enviado al URL especificado en el atributo ACTION del formulario-->
+        <input type="submit" value="Enviar">
+  </form>
+    
+</body>
+</html>
+<!--  TYPE:
+        password, muestra una caja donde se tecleará texto cuyo eco será sustituido por asteríscos.
+        checkbox, un botón que sólo puede tener dos estados, {on, off}.
+        radio, un botón que sólo puede tener dos estados, {on, off}, pero que a diferencia de los checkbox, puede agruparse con otros botones de tipo radio con el mismo nombre y obtener así un comportamiento ``uno de muchos''.
+        reset, un botón que produce que todos los elementos del formulario pasen a su estado por defecto.
+        hidden, es una entrada que no se muestra en el browser y que sirve para pasar información desde el formulario al servidor que no se quiere que el usuario vea.
+    NAME es el nombre simbólico al que se le va asociar el valor introducido en ese elemento por el usuario. Debe estar presente en todos los elementos excepto en submit y reset.
+    VALUE tiene varios significados dependiendo del elemento que se trate. Para campos texto o password especificará el valor por defecto. En botones de tipo radio o checkbox especificará el valor que tendrá el botón cuando sea presionado (el defecto es on). Para los botones submit y reset el valor se puede utilizar para especificar la etiqueta del botón. En los campos ocultos especifica el valor que se pasa al servidor.
+    SIZE es el tamaño físico del campo de entrada en elementos texto o password (por defecto es 20).
+    MAXLENGTH es el número máximo de caracteres que se permiten en un elemento de tipo texto o password (ilimitado por defecto).
+    CHECKED especifica si ese botón, radio o checkbox estará activado por defecto-->
